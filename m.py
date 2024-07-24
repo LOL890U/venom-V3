@@ -10,9 +10,9 @@ from keep_alive import keep_alive
 keep_alive()
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('TOKEM')
+bot = telebot.TeleBot('7299779165:AAHgZItxKJ_Q90L2DNQ2n1OWLShatndxueQ')
 # Admin user IDs
-admin_id = {"5588464519"}
+admin_id = {"5338045956"}
 
 # Files for data storage
 USER_FILE = "users.json"
@@ -21,7 +21,7 @@ KEY_FILE = "keys.json"
 
 # Cooldown settings
 COOLDOWN_TIME = 0  # in seconds
-CONSECUTIVE_ATTACKS_LIMIT = 2
+CONSECUTIVE_ATTACKS_LIMIT = no limit
 CONSECUTIVE_ATTACKS_COOLDOWN = 240  # in seconds
 
 # In-memory storage
@@ -187,7 +187,7 @@ def handle_bgmi(message):
                 port = int(command[2])
                 time = int(command[3])
                 if time > 300:
-                    response = "⚠️𝐄𝐑𝐑𝐎𝐑:170 𝐒𝐄 𝐓𝐇𝐎𝐃𝐀 𝐊𝐀𝐌 𝐓𝐈𝐌𝐄 𝐃𝐀𝐀𝐋 𝐆𝐀𝐍𝐃𝐔."
+                    response = "⚠️𝐄𝐑𝐑𝐎𝐑:1000 𝐒𝐄 𝐓𝐇𝐎𝐃𝐀 𝐊𝐀𝐌 𝐓𝐈𝐌𝐄 𝐃𝐀𝐀𝐋 𝐆𝐀𝐍𝐃𝐔."
                 else: 
                     record_command_logs(user_id, '/bgmi', target, port, time)
                     log_command(user_id, target, port, time)
@@ -207,7 +207,7 @@ def handle_bgmi(message):
 def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
-    response = f"{username}, 🔥𝐂𝐇𝐔𝐃𝐀𝐈 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥\n\n🎯𝐓𝐀𝐑𝐆𝐄𝐓: {target}\n🚪𝐏𝐎𝐑𝐓: {port}\n⏳𝐓𝐢𝐌𝐄: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐄𝐓𝐇𝐎𝐃: 𝐆𝐔𝐋𝐀𝐁𝐈𝐄 𝐏𝐔𝐒𝐒𝐘🥵"
+    response = f"{username}, 🔥 LAND KHARA HONA 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥\n\n🎯𝐓𝐀𝐑𝐆𝐄𝐓: {target}\n🚪𝐏𝐎𝐑𝐓: {port}\n⏳𝐓𝐢𝐌𝐄: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐄𝐓𝐇𝐎𝐃: @DDOSMAKER"
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['clearlogs'])
@@ -296,7 +296,7 @@ def show_help(message):
 💥 /logs: 𝐀𝐀𝐏𝐊𝐄 𝐊𝐀𝐑𝐓𝐎𝐎𝐓𝐄 𝐉𝐀𝐍𝐍𝐄 𝐖𝐀𝐋𝐀 𝐂𝐎𝐌𝐌𝐀𝐍𝐃.
 💥 /clearlogs: 𝐅𝐔𝐂𝐊 𝐓𝐇𝐄 𝐋𝐎𝐆 𝐅𝐈𝐋𝐄.
 💥 /broadcast <message>: 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 𝐊𝐀 𝐌𝐀𝐓𝐋𝐀𝐁 𝐓𝐎 𝐏𝐀𝐓𝐀 𝐇𝐎𝐆𝐀 𝐀𝐍𝐏𝐀𝐃.
-'''
+DM FOR ADMIN:@DDOSMAKER'''
     bot.reply_to(message, help_text)
 
 @bot.message_handler(commands=['start'])
@@ -332,7 +332,7 @@ VIP 🌟:
 𝐃𝐚𝐲: 150 𝐫𝐬
 𝐖𝐞𝐞𝐤: 600 𝐫𝐬
 𝐌𝐨𝐧𝐓𝐡: 1100 𝐫𝐬 
-@VenomCHA7
+@DDOSMAKER
 '''
     bot.reply_to(message, response)
 
